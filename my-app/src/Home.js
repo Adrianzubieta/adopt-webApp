@@ -1,5 +1,6 @@
 import React from 'react';
 import injectSheet from 'react-jss';
+import Header from './componentes/Header';
 
 const styles = {
 
@@ -7,9 +8,10 @@ const styles = {
 
 class Home extends React.Component {
     render() {
+        const { classes } = this.props;
         return (
             <div>
-                <h1>Adopt</h1>
+                <Header  title={'Adopt'} />
             </div>
         );
     }
