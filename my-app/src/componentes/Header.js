@@ -1,13 +1,11 @@
 import React from 'react';
 import injectSheet from 'react-jss';
-import Login from './Login'
+import Login from './Login';
+import {Row, Col} from 'react-bootstrap';
 
 const styles = {
-    header:{
-        display: 'flex',
-    },
     h1:{
-        color: '#51AC9B',
+        color: '#51AC9B'
     }
 }
 
@@ -15,11 +13,14 @@ class Header extends React.Component {
     render() {
         const { classes } = this.props;
         return (
-            <div className={classes.header}>
-                <h1 className={classes.h1}>Adopt</h1>
-                <Login/>
-            </div>
-
+            <Row>
+                <Col >
+                    <h1 className={classes.h1}>Adopt</h1>
+                </Col>
+                <Col>
+                    <Login/>
+                </Col>
+            </Row>
         );
     }
 }
