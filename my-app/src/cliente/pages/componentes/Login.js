@@ -4,8 +4,7 @@ import {Button} from 'react-bootstrap';
 
 const styles = {
     login:{
-        background: '#51AC9B',
-        borderColor: '#51AC9B'
+
     }
 }
 
@@ -20,7 +19,7 @@ class Login extends React.Component {
     render() {
         const { classes } = this.props;
         return (
-            <Button className={classes.login}>
+            <Button className={classes.login} variant="outline-info" size="lg">
                 {this.state.name}
             </Button>
         );
