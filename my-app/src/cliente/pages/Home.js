@@ -11,7 +11,7 @@ class Home extends React.Component {
         const {classes} = this.props;
         return (
             <Fragment>
-                <Header title={'Adop'}/>
+                <Header nameButton={'Iniciar Sesion'} hrefButton={'/Login'} sizeButton={'lg'} />
                 <Row>
                     <Col lg={3}>
                         <Filtros/>
