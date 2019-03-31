@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import injectSheet from 'react-jss';
 import Header from './componentes/Header';
 import Filtros from './componentes/Filtros';
-import {Col, Row} from "react-bootstrap";
+import {Col, Row} from 'react-bootstrap';
 
 const styles = {}
 
