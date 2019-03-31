@@ -2,7 +2,6 @@ import React, {Fragment} from 'react';
 import injectSheet from 'react-jss';
 import {DropdownButton, ButtonGroup, Dropdown} from 'react-bootstrap';
 import Axios from 'axios';
-import Querystring from 'query-string'
 
 
 const styles = {
@@ -16,26 +15,19 @@ const styles = {
 
 class Filtros extends React.Component {
 
-    getProvinces = async () => {
-        let response = await Axios.get('http://localhost:8080/api/countries/1/states');
-        return response.data;
-    };
-
-    createFilterProvince = async () =>{
-        let province = await this.getProvinces();
-
-        console.log(province)
-
-        let dropdownItem = [];
-
-        for (let i = 0; i < province.length; i++) {
-            dropdownItem.push(<Dropdown.Item eventKey={province[i].id.toString()}>
-                {province[i].name}
-            </Dropdown.Item>)
-        }
-
-        return dropdownItem;
+    constructor(props) {
+        super(props);
+        this.state = {
+            provinces: [],
+            cities: []
+        };
     }
+
+    componentWillMount (){
+        this.createFilterProvince()
+        this.createFilterCity()
+    }
+
 
     render() {
         const {classes} = this.props;
@@ -43,11 +35,10 @@ class Filtros extends React.Component {
             <Fragment>
                 <ButtonGroup className={classes.ButtonGroup} vertical>
                     <DropdownButton className={classes.DropdownButton} size="lg" variant='info' as={ButtonGroup} title="Provincia">
-                        {this.createFilterProvince()}
+                        {this.state.provinces}
                     </DropdownButton>
                     <DropdownButton className={classes.DropdownButton} variant='info' as={ButtonGroup} title="Ciudad">
-                        <Dropdown.Item eventKey="1">Cuidad1</Dropdown.Item>
-                        <Dropdown.Item eventKey="2">Cuidad1</Dropdown.Item>
+                        {this.state.cities}
                     </DropdownButton>
                     <DropdownButton className={classes.DropdownButton} variant='info' as={ButtonGroup} title="Tipo">
                         <Dropdown.Item eventKey="1">Perro</Dropdown.Item>
@@ -67,6 +58,50 @@ class Filtros extends React.Component {
         );
 
     }
+
+    getProvinces = async () => {
+        let response = await Axios.get('http://localhost:8080/api/countries/1/states');
+        return response.data;
+    };
+
+    getCities = async (cityId) => {
+        let response = await Axios.get('http://localhost:8080/api/states/'+cityId+'/cities');
+        return response.data;
+    }
+
+    createFilterProvince = async () =>{
+        let provinces = await this.getProvinces();
+
+        let dropdownItem = [];
+
+        for (let i = 0; i < provinces.length; i++) {
+            dropdownItem.push(<Dropdown.Item id={provinces[i].name}>
+                {provinces[i].name}
+            </Dropdown.Item>)
+        }
+
+        this.setState({
+            provinces : dropdownItem
+        })
+    }
+
+    createFilterCity = async () =>{
+        let cities = await this.getCities(24);
+
+        let dropdownItem = [];
+
+        for (let i = 0; i < cities.length; i++) {
+            dropdownItem.push(<Dropdown.Item id={cities[i].name}>
+                {cities[i].name}
+            </Dropdown.Item>)
+        }
+
+        this.setState({
+            cities : dropdownItem
+        })
+    }
+
+
 }
 
 export default injectSheet(styles)(Filtros);
