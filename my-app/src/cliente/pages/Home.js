@@ -14,10 +14,10 @@ class Home extends React.Component {
             <Fragment>
                 <Header nameButton={'Iniciar Sesion'} hrefButton={'/Login'} sizeButton={'lg'} />
                 <Row>
-                    <Col lg={3}>
+                    <Col lg={2}>
                         <Filters/>
                     </Col>
-                    <Col lg={9}>
+                    <Col lg={10}>
                         <Table/>
                     </Col>
                 </Row>
