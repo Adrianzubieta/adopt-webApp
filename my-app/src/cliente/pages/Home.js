@@ -1,7 +1,8 @@
 import React, {Fragment} from 'react';
 import injectSheet from 'react-jss';
 import Header from './componentes/Header';
-import Filtros from './componentes/Filtros';
+import Filters from './componentes/Filters';
+import Table from './componentes/Table';
 import {Col, Row} from 'react-bootstrap';
 
 const styles = {}
@@ -14,7 +15,10 @@ class Home extends React.Component {
                 <Header nameButton={'Iniciar Sesion'} hrefButton={'/Login'} sizeButton={'lg'} />
                 <Row>
                     <Col lg={3}>
-                        <Filtros/>
+                        <Filters/>
+                    </Col>
+                    <Col lg={9}>
+                        <Table/>
                     </Col>
                 </Row>
             </Fragment>
