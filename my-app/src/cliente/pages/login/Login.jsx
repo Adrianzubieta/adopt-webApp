@@ -2,6 +2,7 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import Input from "./components/input/Input";
 import Button from "./components/button/Button";
+import {FaFacebookF, FaGoogle} from 'react-icons/fa';
 
 const styles = theme => ({
     container: {
@@ -24,14 +25,18 @@ const styles = theme => ({
         fontSize: theme.font.size.title * 2.5,
         fontWeight: 'bold'
     },
-    input:{
+    input: {
         display: 'flex',
         justifyContent: 'center',
     },
-    button:{
+    buttonLogin: {
         display: 'flex',
         justifyContent: 'center',
         margin: theme.spacing.unit * 3,
+    },
+    buttonsNetwork: {
+        display: 'flex',
+        justifyContent: 'space-around',
     },
     [`@media (min-width: ${theme.spacing.tablet}px)`]: {},
     [`@media (min-width: ${theme.spacing.desktop}px)`]: {
@@ -40,9 +45,7 @@ const styles = theme => ({
             width: theme.spacing.unit * 90,
             height: theme.spacing.unit * 100,
         },
-        title: {
-
-        },
+        title: {},
     }
 })
 
@@ -66,8 +69,16 @@ class Login extends React.Component {
                             <p>Password: </p>
                         </Input>
                     </div>
-                    <div className={classes.button}>
-                        <Button name={'Ingresar'} />
+                    <div className={classes.buttonLogin}>
+                        <Button name={'Ingresar'}/>
+                    </div>
+                    <div className={classes.buttonsNetwork}>
+                        <Button name={'Facebook'}>
+                        <FaFacebookF />
+                    </Button>
+                        <Button name={'Google'}>
+                            <FaGoogle />
+                        </Button>
                     </div>
                 </div>
             </div>

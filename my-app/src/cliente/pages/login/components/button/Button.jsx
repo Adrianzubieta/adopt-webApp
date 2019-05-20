@@ -32,6 +32,9 @@ class Button extends React.Component {
         const {classes} = this.props;
         return (
             <div className={classes.container}>
+                <div>
+                    {this.props.children}
+                </div>
                 <button className={classes.button}>
                     {this.props.name}
                 </button>
