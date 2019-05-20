@@ -10,21 +10,24 @@ const styles = theme => ({
         backgroundColor: theme.background.shadow,
         boxShadow: theme.styles.shadowBorder,
         color: theme.color.subtitle,
+        borderRadius: theme.spacing.unit * 2,
+        height: theme.spacing.unit * 20,
     },
     logo: {
         display: 'flex',
+        paddingRight: theme.spacing.unit * 4,
+        paddingTop: theme.spacing.unit * 2,
+        fontSize: theme.spacing.unit * 15,
     },
     [`@media (min-width: ${theme.spacing.tablet}px)`]: {
         header: {},
     },
     [`@media (min-width: ${theme.spacing.desktop}px)`]: {
         header: {
-            height: theme.spacing.unit * 20,
-            borderRadius: theme.spacing.unit * 2,
+
         },
         logo: {
-            paddingRight: theme.spacing.unit * 4,
-            fontSize: theme.spacing.unit * 15,
+
         }
     }
 })
