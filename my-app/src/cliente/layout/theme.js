@@ -8,7 +8,8 @@ export default {
         primary: '#FAFAFA',
         secondary: '#FFFFFF',
         interactive: '#9B9B9B',
-        shadow: '#F1F1F1'
+        shadow: '#F1F1F1',
+        buttonGoogle: 'red',
     },
     borderColor: {
         input: 'black',
@@ -18,7 +19,10 @@ export default {
     color: {
         title: '#666666',
         subtitle: '#B3B3B3',
-        icon: '#D8D8D8'
+        icon: '#D8D8D8',
+        font: {
+            buttonGoogle: 'white',
+        }
     },
     font: {
         size: {

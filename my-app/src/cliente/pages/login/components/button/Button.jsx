@@ -14,11 +14,13 @@ const styles = theme => ({
     button: {
         border: 'none',
         outline: 'none',
-        background: 'white',
+        background: 'none',
+        color: 'white',
         width: theme.spacing.unit * 20,
         height: theme.spacing.unit * 9,
         cursor: 'pointer'
     },
+
     [`@media (min-width: ${theme.spacing.tablet}px)`]: {},
     [`@media (min-width: ${theme.spacing.desktop}px)`]: {
         container: {},
@@ -31,8 +33,8 @@ class Button extends React.Component {
     render() {
         const {classes} = this.props;
         return (
-            <div className={classes.container}>
-                <div>
+            <div className={`${classes.container} ${this.props.styles}`}>
+                <div className={this.props.stylesIcon}>
                     {this.props.children}
                 </div>
                 <button className={classes.button}>

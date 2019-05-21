@@ -38,6 +38,16 @@ const styles = theme => ({
         display: 'flex',
         justifyContent: 'space-around',
     },
+    buttonsGoogle: {
+        backgroundColor: 'red',
+        color: 'white',
+    },
+    icon:{
+        display: 'flex',
+        fontSize: theme.spacing.unit * 5,
+        color: 'white',
+        alignItems: 'center'
+    },
     [`@media (min-width: ${theme.spacing.tablet}px)`]: {},
     [`@media (min-width: ${theme.spacing.desktop}px)`]: {
         login: {
@@ -76,7 +86,7 @@ class Login extends React.Component {
                         <Button name={'Facebook'}>
                         <FaFacebookF />
                     </Button>
-                        <Button name={'Google'}>
+                        <Button styles={classes.buttonsGoogle} stylesIcon={classes.icon} name={'Google'}>
                             <FaGoogle />
                         </Button>
                     </div>
