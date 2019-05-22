@@ -7,22 +7,28 @@ const styles = theme => ({
     header: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'center',
         backgroundColor: theme.background.primary,
         boxShadow: theme.styles.shadowBorder,
         color: theme.color.subtitle,
         borderRadius: theme.spacing.unit * 2,
-        height: theme.spacing.unit * 20,
     },
     logo: {
         display: 'flex',
-        paddingRight: theme.spacing.unit * 4,
-        paddingTop: theme.spacing.unit * 2,
+        alignItems: 'center',
         fontSize: theme.spacing.unit * 10,
+        padding: theme.spacing.unit * 2,
+    },
+    titleLogo:{
+        display: 'flex',
+        justifyContent: 'flex-end',
+        width: '65%',
     },
     buttons: {
         display: 'flex',
-        alignItems: 'center'
+        width: '35%',
+        alignItems: 'flex-end',
+        justifyContent: 'flex-end',
+        flexDirection: 'column',
     },
     buttonRegister: {
         backgroundColor: theme.background.primary,
@@ -35,26 +41,44 @@ const styles = theme => ({
     },
     [`@media (min-width: ${theme.spacing.desktop}px)`]: {
         header: {
-            flexDirection: 'row',
+            height: theme.spacing.unit * 20,
         },
         logo: {
-            fontSize: theme.spacing.unit * 15,
-        }
+            paddingRight: theme.spacing.unit * 4,
+            paddingTop: theme.spacing.unit * 2,
+            fontSize: theme.spacing.unit * 10,
+        },
+        titleLogo:{
+            width: '55%',
+            justifyContent: 'flex-end',
+            alignItems: 'center',
+        },
+        buttons: {
+            justifyContent: 'flex-end',
+            width: '45%',
+            alignItems: 'center',
+            flexDirection: 'row',
+        },
+        buttonRegister: {
+        },
+        buttonLogin: {
+        },
     }
 })
 
 const Header = ({classes}) => (
 
     <div className={classes.header}>
-        <div className={classes.logo}>
-            <FaPaw/>
+        <div className={classes.titleLogo}>
+            <div className={classes.logo}>
+                <FaPaw/>
+            </div>
+            <h1>Adopt</h1>
         </div>
-        <h1>Adopt</h1>
         <div className={classes.buttons}>
             <Button name={'Acceder'} styles={classes.buttonLogin}/>
             <Button name={'Registrarse'} styles={classes.buttonRegister}/>
         </div>
-
     </div>
 )
 
