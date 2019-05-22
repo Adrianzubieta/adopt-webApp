@@ -5,11 +5,12 @@ export default {
         desktop: 1024
     },
     background: {
-        primary: '#FAFAFA',
+        primary: '#B7D4D7',
         secondary: '#FFFFFF',
         interactive: '#9B9B9B',
         shadow: '#F1F1F1',
-        buttonGoogle: 'red',
+        buttonGoogle: '#D94D3D',
+        buttonFacebook: '#4267B2'
     },
     borderColor: {
         input: 'black',
@@ -22,7 +23,8 @@ export default {
         icon: '#D8D8D8',
         font: {
             buttonGoogle: 'white',
-        }
+        },
+        primary: '#B7D4D7',
     },
     font: {
         size: {

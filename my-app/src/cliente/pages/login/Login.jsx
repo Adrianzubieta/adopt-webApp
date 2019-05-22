@@ -22,7 +22,7 @@ const styles = theme => ({
     title: {
         display: 'flex',
         justifyContent: 'center',
-        fontSize: theme.font.size.title * 2.5,
+        fontSize: theme.font.size.title * 1.5,
         fontWeight: 'bold'
     },
     input: {
@@ -36,17 +36,23 @@ const styles = theme => ({
     },
     buttonsNetwork: {
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
     },
     buttonsGoogle: {
-        backgroundColor: 'red',
+        backgroundColor: theme.background.buttonGoogle,
         color: 'white',
+        borderColor: '#D94D3D',
     },
-    icon:{
+    buttonsFacebook: {
+        backgroundColor: theme.background.buttonFacebook,
+        color: 'white',
+        borderColor: '#4267B2',
+    },
+    iconButton: {
         display: 'flex',
         fontSize: theme.spacing.unit * 5,
         color: 'white',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     [`@media (min-width: ${theme.spacing.tablet}px)`]: {},
     [`@media (min-width: ${theme.spacing.desktop}px)`]: {
@@ -55,11 +61,28 @@ const styles = theme => ({
             width: theme.spacing.unit * 90,
             height: theme.spacing.unit * 100,
         },
-        title: {},
+        title: {
+            fontSize: theme.font.size.title * 2.5,
+        },
     }
 })
 
 class Login extends React.Component {
+
+    onClickLogin = () => {
+        console.log('Click')
+        window.location.reload();
+    }
+
+    onClickFacebook = () => {
+        console.log('Click')
+        window.location.reload();
+    }
+
+    onClickGoogle = () => {
+        console.log('Click')
+        window.location.reload();
+    }
 
     render() {
         const {classes} = this.props;
@@ -67,7 +90,7 @@ class Login extends React.Component {
             <div className={classes.container}>
                 <div className={classes.login}>
                     <div className={classes.title}>
-                        Login
+                        Iniciar Sesión
                     </div>
                     <div className={classes.input}>
                         <Input type={'text'} placeholder={'nombre'}>
@@ -80,14 +103,17 @@ class Login extends React.Component {
                         </Input>
                     </div>
                     <div className={classes.buttonLogin}>
-                        <Button name={'Ingresar'}/>
+                        <Button name={'Ingresar'} onClick={ this.onClickLogin }>
+                        </Button>
                     </div>
                     <div className={classes.buttonsNetwork}>
-                        <Button name={'Facebook'}>
-                        <FaFacebookF />
-                    </Button>
-                        <Button styles={classes.buttonsGoogle} stylesIcon={classes.icon} name={'Google'}>
-                            <FaGoogle />
+                        <Button styles={classes.buttonsFacebook} stylesIcon={classes.iconButton}
+                                name={'Facebook'} onClick={ this.onClickFacebook }>
+                            <FaFacebookF/>
+                        </Button>
+                        <Button styles={classes.buttonsGoogle} stylesIcon={classes.iconButton}
+                                name={'Google'} onClick={ this.onClickGoogle }>
+                            <FaGoogle/>
                         </Button>
                     </div>
                 </div>

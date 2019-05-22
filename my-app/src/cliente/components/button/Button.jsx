@@ -23,7 +23,6 @@ const styles = theme => ({
         height: theme.spacing.unit * 9,
         cursor: 'pointer',
     },
-
     [`@media (min-width: ${theme.spacing.tablet}px)`]: {},
     [`@media (min-width: ${theme.spacing.desktop}px)`]: {
         container: {},
