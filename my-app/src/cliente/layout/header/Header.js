@@ -1,5 +1,5 @@
 import React from 'react';
-import withStyles from 'react-jss';
+import injectSheet from 'react-jss';
 import {FaPaw} from 'react-icons/fa';
 import Button from '../../components/button/Button';
 
@@ -66,20 +66,35 @@ const styles = theme => ({
     }
 })
 
-const Header = ({classes}) => (
 
-    <div className={classes.header}>
-        <div className={classes.titleLogo}>
-            <div className={classes.logo}>
-                <FaPaw/>
+
+class Header extends React.Component {
+
+    onClickLogin = () => {
+        window.location.href = '/login';
+    }
+
+    onClickRegister = () => {
+        window.location.href = '/register';
+    }
+
+    render() {
+        const {classes} = this.props;
+        return (
+            <div className={classes.header}>
+                <div className={classes.titleLogo}>
+                    <div className={classes.logo}>
+                        <FaPaw/>
+                    </div>
+                    <h1>Adopt</h1>
+                </div>
+                <div className={classes.buttons}>
+                    <Button name={'Acceder'} styles={classes.buttonLogin} onClick={this.onClickLogin}/>
+                    <Button name={'Registrarse'} styles={classes.buttonRegister} onClick={this.onClickRegister} />
+                </div>
             </div>
-            <h1>Adopt</h1>
-        </div>
-        <div className={classes.buttons}>
-            <Button name={'Acceder'} styles={classes.buttonLogin}/>
-            <Button name={'Registrarse'} styles={classes.buttonRegister}/>
-        </div>
-    </div>
-)
+        );
+    }
+}
 
-export default withStyles(styles)(Header)
+export default injectSheet(styles)(Header);

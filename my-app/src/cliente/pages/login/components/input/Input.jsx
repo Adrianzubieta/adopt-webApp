@@ -8,7 +8,7 @@ const styles = theme => ({
         alignItems: 'center',
         width: theme.spacing.unit * 50,
         height: theme.spacing.unit * 9,
-        border: [2, 'solid', 'black'],
+        border: [2, 'solid', theme.borderColor.input],
         borderRadius: theme.spacing.unit * 2,
         color: theme.color.title,
     },

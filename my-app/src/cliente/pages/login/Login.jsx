@@ -1,7 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import Input from "./components/input/Input";
-import Button from "./components/button/Button";
+import Button from "../../components/button/Button";
 import {FaFacebookF, FaGoogle} from 'react-icons/fa';
 
 const styles = theme => ({
@@ -40,18 +40,16 @@ const styles = theme => ({
     },
     buttonsGoogle: {
         backgroundColor: theme.background.buttonGoogle,
-        color: 'white',
-        borderColor: '#D94D3D',
+        borderColor: theme.background.buttonGoogle,
     },
     buttonsFacebook: {
         backgroundColor: theme.background.buttonFacebook,
-        color: 'white',
-        borderColor: '#4267B2',
+        borderColor: theme.background.buttonFacebook,
     },
     iconButton: {
         display: 'flex',
         fontSize: theme.spacing.unit * 5,
-        color: 'white',
+        color: theme.color.font.button,
         alignItems: 'center',
     },
     [`@media (min-width: ${theme.spacing.tablet}px)`]: {},

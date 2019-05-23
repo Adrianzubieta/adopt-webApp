@@ -22,7 +22,7 @@ export default {
         subtitle: '#B3B3B3',
         icon: '#D8D8D8',
         font: {
-            buttonGoogle: 'white',
+            button: 'white',
         },
         primary: '#B7D4D7',
     },

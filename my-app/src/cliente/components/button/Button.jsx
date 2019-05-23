@@ -5,7 +5,7 @@ const styles = theme => ({
     container: {
         display: 'flex',
         justifyContent: 'center',
-        border: [2, 'solid', theme.borderColor.button],
+        border: [2, 'solid'],
         borderRadius: theme.spacing.unit * 2,
         width: theme.spacing.unit * 23,
         height: theme.spacing.unit * 9,
@@ -18,7 +18,7 @@ const styles = theme => ({
         border: 'none',
         outline: 'none',
         background: 'none',
-        color: 'white',
+        color: theme.color.font.button,
         width: theme.spacing.unit * 20,
         height: theme.spacing.unit * 9,
         cursor: 'pointer',
