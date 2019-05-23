@@ -1,16 +1,16 @@
 import React, {Fragment} from 'react';
 import injectSheet from 'react-jss';
+import Card from './components/Card'
 
+const styles = {
 
-const styles = {}
+}
 
 class Home extends React.Component {
     render() {
         const {classes} = this.props;
         return (
-            <Fragment>
-                <h1>Home</h1>
-            </Fragment>
+            <Card />
         );
     }
 }

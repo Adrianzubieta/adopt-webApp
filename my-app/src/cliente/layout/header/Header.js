@@ -20,8 +20,10 @@ const styles = theme => ({
     },
     titleLogo:{
         display: 'flex',
+        alignItems: 'center',
         justifyContent: 'flex-end',
         width: '65%',
+        cursor: 'pointer'
     },
     buttons: {
         display: 'flex',
@@ -51,7 +53,6 @@ const styles = theme => ({
         titleLogo:{
             width: '55%',
             justifyContent: 'flex-end',
-            alignItems: 'center',
         },
         buttons: {
             justifyContent: 'flex-end',
@@ -78,11 +79,15 @@ class Header extends React.Component {
         window.location.href = '/register';
     }
 
+    onClickHome = () => {
+        window.location.href = '/';
+    }
+
     render() {
         const {classes} = this.props;
         return (
             <div className={classes.header}>
-                <div className={classes.titleLogo}>
+                <div className={classes.titleLogo} onClick={this.onClickHome}>
                     <div className={classes.logo}>
                         <FaPaw/>
                     </div>
