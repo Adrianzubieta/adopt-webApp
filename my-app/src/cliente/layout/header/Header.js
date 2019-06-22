@@ -67,8 +67,6 @@ const styles = theme => ({
     }
 })
 
-
-
 class Header extends React.Component {
 
     onClickLogin = () => {

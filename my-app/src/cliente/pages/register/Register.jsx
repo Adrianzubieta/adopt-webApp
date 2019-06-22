@@ -3,6 +3,7 @@ import injectSheet from 'react-jss';
 import Input from "./components/input/Input";
 import Button from "../../components/button/Button";
 import {FaFacebookF, FaGoogle} from 'react-icons/fa';
+import * as firebase from 'firebase';
 
 const styles = theme => ({
     container: {
@@ -70,7 +71,14 @@ class Register extends React.Component {
 
     onClickLogin = () => {
         console.log('Click')
-        window.location.reload();
+        firebase.auth().createUserWithEmailAndPassword("adriancitoxz@gmail.com", "123456789").catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+            // ...
+        });
     }
 
     onClickFacebook = () => {

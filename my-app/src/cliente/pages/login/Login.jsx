@@ -3,6 +3,7 @@ import injectSheet from 'react-jss';
 import Input from "./components/input/Input";
 import Button from "../../components/button/Button";
 import {FaFacebookF, FaGoogle} from 'react-icons/fa';
+import * as firebase from 'firebase';
 
 const styles = theme => ({
     container: {
@@ -65,21 +66,52 @@ const styles = theme => ({
     }
 })
 
+var provider = new firebase.auth.FacebookAuthProvider();
+
 class Login extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            user: '',
+            pass: ''
+        };
+    }
 
     onClickLogin = () => {
         console.log('Click')
+        firebase.auth().signInWithEmailAndPassword("adrianzubietah@gmail.com", "123456789").catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+            // ...
+        });
         window.location.reload();
     }
 
     onClickFacebook = () => {
-        console.log('Click')
-        window.location.reload();
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            // ...
+        }).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // The email of the user's account used.
+            var email = error.email;
+            // The firebase.auth.AuthCredential type that was used.
+            var credential = error.credential;
+            // ...
+        });
     }
 
     onClickGoogle = () => {
         console.log('Click')
-        window.location.reload();
+
     }
 
     render() {
