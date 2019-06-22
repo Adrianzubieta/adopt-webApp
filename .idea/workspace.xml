@@ -4,6 +4,8 @@
     <list default="true" id="e813cf7c-7154-495f-9b43-2c26db0f3089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/register/components/input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/cliente/pages/register/components/input/Input.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/firebaseConfig.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+            <state relative-caret-position="204">
+              <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#281#1962#0" />
@@ -33,10 +35,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="312">
+              <caret line="109" column="28" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="28" />
               <folding>
+                <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#281#1951#0" />
+                <element signature="e#298#364#0" />
+                <element signature="e#377#701#0" />
+                <element signature="e#714#854#0" />
+                <element signature="e#867#933#0" />
+                <element signature="e#952#1058#0" />
+                <element signature="e#1080#1152#0" />
+                <element signature="e#1173#1288#0" />
+                <element signature="e#1311#1430#0" />
+                <element signature="e#1448#1550#0" />
               </folding>
             </state>
           </provider>
@@ -45,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-app/src/firebaseConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="119">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -57,6 +69,9 @@
     <findStrings>
       <find>window.location</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,8 +83,9 @@
         <option value="$PROJECT_DIR$/my-app/src/cliente/layout/header/Header.js" />
         <option value="$PROJECT_DIR$/my-app/public/index.html" />
         <option value="$PROJECT_DIR$/my-app/src/firebaseConfig.js" />
-        <option value="$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx" />
         <option value="$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/cliente/pages/register/components/input/Input.jsx" />
+        <option value="$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx" />
       </list>
     </option>
   </component>
@@ -80,6 +96,7 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
       </list>
     </option>
   </component>
@@ -146,6 +163,27 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="register" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -157,6 +195,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,7 +221,7 @@
       <updated>1558689526608</updated>
       <workItem from="1558689529668" duration="1565000" />
       <workItem from="1559639472169" duration="800000" />
-      <workItem from="1561204692441" duration="8622000" />
+      <workItem from="1561204692441" duration="13489000" />
     </task>
     <task id="LOCAL-00001" summary="agregue la autenticacion de correo y pass con firebase">
       <created>1561217255432</created>
@@ -191,17 +230,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561217255432</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="agregue la autenticacion de facebook y google">
+      <created>1561218287999</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561218287999</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10987000" />
+    <option name="totallyTimeSpent" value="15854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24851191" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24851191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -217,7 +263,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" visible="true" weight="0.23567921" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" visible="true" weight="0.2913257" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.36988544" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -236,7 +282,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="agregue la autenticacion de correo y pass con firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue la autenticacion de correo y pass con firebase" />
+    <MESSAGE value="agregue la autenticacion de facebook y google" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregue la autenticacion de facebook y google" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/my-app/src/Routes.js">
@@ -363,27 +410,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/cliente/pages/register/components/input/Input.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#107#402#0" />
+            <element signature="e#415#555#0" />
+            <element signature="e#693#792#0" />
+            <element signature="e#809#864#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/firebaseConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="119">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="312">
+          <caret line="109" column="28" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="28" />
           <folding>
+            <element signature="e#0#26#0" expanded="true" />
             <element signature="e#281#1951#0" />
+            <element signature="e#298#364#0" />
+            <element signature="e#377#701#0" />
+            <element signature="e#714#854#0" />
+            <element signature="e#867#933#0" />
+            <element signature="e#952#1058#0" />
+            <element signature="e#1080#1152#0" />
+            <element signature="e#1173#1288#0" />
+            <element signature="e#1311#1430#0" />
+            <element signature="e#1448#1550#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+        <state relative-caret-position="204">
+          <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#281#1962#0" />

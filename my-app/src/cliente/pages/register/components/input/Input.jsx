@@ -38,7 +38,13 @@ class Input extends React.Component {
             <div>
                 {this.props.children}
                 <div className={classes.container}>
-                    <input className={classes.input} type={this.props.type} placeholder={this.props.placeholder}/>
+                    <input
+                      className={classes.input}
+                       type={this.props.type}
+                       name={this.props.name}
+                       placeholder={this.props.placeholder}
+                       onChange={this.props.onChange}
+                    />
                 </div>
             </div>
 

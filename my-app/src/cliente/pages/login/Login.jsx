@@ -66,67 +66,51 @@ const styles = theme => ({
     }
 })
 
-
+const providerFacebook = new firebase.auth.FacebookAuthProvider();
+const providerGoogle = new firebase.auth.GoogleAuthProvider();
 
 class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             user: '',
-            pass: ''
+            password: '',
         };
     }
 
     onClickLogin = () => {
         console.log('Click')
-        firebase.auth().signInWithEmailAndPassword("adrianzubietah@gmail.com", "123456789").catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
+        firebase.auth().signInWithEmailAndPassword(this.state.user, this.state.password).catch(function(error) {
+            let errorCode = error.code;
+            let errorMessage = error.message;
             console.log(errorCode);
             console.log(errorMessage);
-            // ...
         });
         window.location.reload();
     }
 
     onClickFacebook = () => {
-        var provider = new firebase.auth.FacebookAuthProvider();
-        firebase.auth().signInWithPopup(provider).then(function(result) {
-            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-            var token = result.credential.accessToken;
-            // The signed-in user info.
-            var user = result.user;
-            // ...
+        firebase.auth().signInWithPopup(providerFacebook).then(function(result) {
+            let token = result.credential.accessToken;
+            let user = result.user;
+            console.log(user);
         }).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // The email of the user's account used.
-            var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
-            // ...
+            let errorCode = error.code;
+            let errorMessage = error.message;
+            let email = error.email;
+            let credential = error.credential;
         });
     }
 
     onClickGoogle = () => {
-        var provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider).then(function(result) {
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            var token = result.credential.accessToken;
-            // The signed-in user info.
-            var user = result.user;
-            // ...
+        firebase.auth().signInWithPopup(providerGoogle).then(function(result) {
+            let token = result.credential.accessToken;
+            let user = result.user;
         }).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // The email of the user's account used.
-            var email = error.email;
-            // The firebase.auth.AuthCredential type that was used.
-            var credential = error.credential;
-            // ...
+            let errorCode = error.code;
+            let errorMessage = error.message;
+            let email = error.email;
+            let credential = error.credential;
         });
     }
 
