@@ -32,10 +32,12 @@ const styles = theme => ({
 
 class Button extends React.Component {
 
+
     render() {
         const {classes , onClick} = this.props;
+        const style = this.props.hidden ? {display: 'none'} : {};
         return (
-            <div className={`${classes.container} ${this.props.styles}`} onClick={ onClick }>
+            <div className={`${classes.container} ${this.props.styles}`} onClick={ onClick } style={style} >
                 <div className={this.props.stylesIcon}>
                     {this.props.children}
                 </div>

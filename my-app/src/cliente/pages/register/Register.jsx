@@ -83,7 +83,10 @@ class Register extends React.Component {
 
   onClickLogin = (e) => {
     console.log('login')
-    firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).catch(function (error) {
+    firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then(function () {
+      console.log("bien")
+    }
+    ).catch(function (error) {
         console.log('error')
         console.log(error)
     });

@@ -68,6 +68,12 @@ const styles = theme => ({
 })
 
 class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            login : false,
+        };
+    }
 
     onClickLogin = () => {
         window.location.href = '/login';
@@ -85,15 +91,15 @@ class Header extends React.Component {
         const {classes} = this.props;
         return (
             <div className={classes.header}>
-                <div className={classes.titleLogo} onClick={this.onClickHome}>
+                <div className={classes.titleLogo} onClick={this.onClickHome} >
                     <div className={classes.logo}>
                         <FaPaw/>
                     </div>
                     <h1>Adopt</h1>
                 </div>
                 <div className={classes.buttons}>
-                    <Button name={'Acceder'} styles={classes.buttonLogin} onClick={this.onClickLogin}/>
-                    <Button name={'Registrarse'} styles={classes.buttonRegister} onClick={this.onClickRegister} />
+                    <Button name={'Acceder'} styles={classes.buttonLogin} onClick={this.onClickLogin} hidden={this.state.login}/>
+                    <Button name={'Registrarse'} styles={classes.buttonRegister} onClick={this.onClickRegister} hidden={this.state.login}/>
                 </div>
             </div>
         );
