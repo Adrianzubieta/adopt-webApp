@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
-
+import { connect } from 'react-redux';
+import Button from '../../../components/button/Button';
 
 const styles = theme => ({
     card: {
@@ -17,14 +18,27 @@ const styles = theme => ({
 class Card extends React.Component {
     render() {
         const {classes} = this.props;
+        const {login} = this.props;
         return (
-            <div className={classes.card}>   
+            <div className={classes.card} >   
+                <Button hidden={login} />
                 <div>Title</div>
-                <div>Content</div>
+                <div>{login}</div>
                 <div>Content</div>
             </div>
         );
     }
 }
 
-export default injectSheet(styles)(Card);
+const mapStateToProps = state => {
+    return {
+      login : state
+    }
+  }
+  
+
+const ConnectLogin = connect(
+    mapStateToProps
+  )(Card);
+  
+export default injectSheet(styles)(ConnectLogin);
