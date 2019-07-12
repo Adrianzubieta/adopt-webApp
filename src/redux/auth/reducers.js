@@ -1,6 +1,6 @@
-const loginApp = (state = true, action) => {
+const login = (state = true, action) => {
     switch(action.type){
-        case "UPDATE_LOGIN":
+        case "LOGIN":
             return state 
         default:
             return state
@@ -8,5 +8,5 @@ const loginApp = (state = true, action) => {
 }
 
 export {
-    loginApp
+    login
 }

@@ -1,6 +1,6 @@
 export const updateLogin = diff => {
     return {
-        type: "UPDATE_LOGIN",
+        type: "LOGIN",
         data: diff
     }
 }

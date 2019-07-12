@@ -23,7 +23,6 @@ class Card extends React.Component {
             <div className={classes.card} >   
                 <Button hidden={login} />
                 <div>Title</div>
-                <div>{login}</div>
                 <div>Content</div>
             </div>
         );

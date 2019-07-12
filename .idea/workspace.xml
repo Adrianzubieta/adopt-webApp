@@ -1,31 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e813cf7c-7154-495f-9b43-2c26db0f3089" name="Default Changelist" comment="">
+    <list default="true" id="e813cf7c-7154-495f-9b43-2c26db0f3089" name="Default Changelist" comment="modifique la disposicion de los pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/actions/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/components/button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/components/button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/Page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/home/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/home/components/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/login/components/input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/login/components/input/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/register/Register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/register/components/input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/register/components/input/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebaseConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/reducers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cliente/pages/home/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/home/components/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/login.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,12 +19,21 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="51">
               <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/firebaseConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -89,6 +79,24 @@
             <path>
               <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -145,13 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562847316861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modifique la disposicion de los pages">
+      <created>1562933791840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562933791840</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2624811" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -166,7 +182,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.42716858" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.21931261" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -183,7 +199,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="agregue a git ignore la carpeta de .idea" />
     <MESSAGE value="agregue redux" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue redux" />
+    <MESSAGE value="modifique la disposicion de los pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifique la disposicion de los pages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/cliente/pages/login/Login.jsx">
@@ -201,8 +218,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="51">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cliente/pages/register/components/input/Input.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cliente/pages/login/components/input/Input.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/firebaseConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
