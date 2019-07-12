@@ -1,32 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e813cf7c-7154-495f-9b43-2c26db0f3089" name="Default Changelist" comment="agregue a git ignore la carpeta de .idea">
+    <list default="true" id="e813cf7c-7154-495f-9b43-2c26db0f3089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/actions/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/components/button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/components/button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/Page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/layout/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/layout/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/home/components/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/home/components/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/login/components/input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/login/components/input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/cliente/pages/register/components/input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/cliente/pages/register/components/input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebaseConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/reducers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/package.json">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="102">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>my-app</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Onready\IdeaProjects\alternativa-image\adopt-webApp</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +66,7 @@
       <list>
         <option value="$PROJECT_DIR$/my-app/.gitignore" />
         <option value="$PROJECT_DIR$/my-app/package.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -59,16 +90,16 @@
               <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="adopt-webApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adopt-webApp" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Onready\IdeaProjects\alternativa-image\adopt-webApp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -93,13 +124,34 @@
       <option name="project" value="LOCAL" />
       <updated>1562845064874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e813cf7c-7154-495f-9b43-2c26db0f3089" name="Default Changelist" comment="agregue a git ignore la carpeta de .idea" />
+      <created>1562847205301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562847205301</updated>
+    </task>
+    <task id="LOCAL-00002" summary="agregue redux">
+      <created>1562847221779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562847221779</updated>
+    </task>
+    <task id="LOCAL-00003" summary="agregue redux">
+      <created>1562847316861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562847316861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -114,7 +166,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.42716858" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -130,23 +182,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="agregue a git ignore la carpeta de .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregue a git ignore la carpeta de .idea" />
+    <MESSAGE value="agregue redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregue redux" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my-app/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/cliente/pages/login/Login.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/cliente/pages/login/Login.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/package.json">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
