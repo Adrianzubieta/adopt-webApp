@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import {FaFacebookF, FaGoogle} from 'react-icons/fa';
 import * as firebase from 'firebase';
 import {withRouter} from 'react-router-dom';
+import axios from 'axios';
 
 const styles = theme => ({
   container: {
@@ -80,12 +81,17 @@ class Login extends React.Component {
   }
 
   onClickLogin = () => {
-    firebase.auth().signInWithEmailAndPassword(this.state.user, this.state.password)
-      .then(function (e) {
-        window.location.href = '/';
-      }).catch(function (error) {
-        window.location.href = '/login';
-    });
+    // firebase.auth().signInWithEmailAndPassword(this.state.user, this.state.password)
+    //   .then(function (e) {
+    //     window.location.href = '/';
+    //   }).catch(function (error) {
+    //     window.location.href = '/login';
+    // });
+    axios.get(`localhost:8080/api/user/1`)
+      .then(res => {
+        const persons = res.data;
+        console.log(persons);
+      })
   }
 
   onClickFacebook = () => {
